@@ -1,11 +1,20 @@
 import { useState } from "react";
+import { Navbar } from "./components/Navbar";
+import { Hero2 } from "./components/Hero2";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Gallery } from "./components/gallery";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1 className="text-2xl font-bold text-red-400">Init project</h1>
+      <Navbar />
+      <Hero />
+      <About />
+      <Gallery />
+      <Hero2 />
     </>
   );
 }
