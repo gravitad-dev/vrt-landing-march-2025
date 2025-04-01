@@ -1,7 +1,7 @@
 import React from "react";
-import { BackgroundBeams } from "./ui/background-beams";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 import { motion } from "motion/react";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 export function Hero2() {
   return (

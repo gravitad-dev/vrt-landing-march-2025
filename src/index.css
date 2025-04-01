@@ -1,8 +1,29 @@
 @import "tailwindcss";
+@layer theme, base, components, utilities;
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  /* Configure your theme variables here */
-  --font-display: "Inter", "sans-serif";
-  --color-primary-500: oklch(0.84 0.18 117.33);
-  --spacing: 0.25rem;
+@theme {
+  --font-display: "system-ui";
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --font-body: "Inter", "system-ui", "sans-serif";
+  /* --spacing: 0.25rem; */
+
+  --color-primary: #002bff;
+  --color-secondary: #8b5cf6;
+  --color-accent: #10b981;
+  --color-bg: #f9fafb;
+  --color-text: #1e293b;
+  --color-border: #d7d9dd;
+}
+
+.dark {
+  --color-primary: #1e86ee;
+  --color-secondary: #a78bfa;
+  --color-accent: #34d399;
+  --color-bg: #171717;
+  --color-text: #f3f4f6;
+  --color-border: #444546;
 }
