@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 import { SwitchThemeBtn } from "../elements/SwitchThemeBtn";
 import { Layout } from "./Layout";
+import { Logo } from "../elements/Logo";
+import { Button } from "../elements/Button";
+
+const MENU_ITEMS = [
+  { name: "Inicio", href: "/" },
+  { name: "Nosotros", href: "/about" },
+  { name: "Contacto", href: "/contact" },
+];
 
 export const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,17 +31,29 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-[1000] h-[75px] bg-bg  dark:text-white border-b border-border">
+    <nav className="sticky top-0 z-[1000] h-[75px] bg-bg  text-tbody border-b border-border">
       <Layout className="flex flex-row justify-between xl:max-w-[100%] px-6 xl:px-6">
-        <h1 className="text-xl font-bold font-grotesk">VTR</h1>
+        <div className="w-full">
+          <Logo />
+        </div>
 
-        <ul className="flex items-center space-x-4 font-poppins">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Contact</li>
+        <ul className="hidden md:flex w-full justify-center items-center space-x-4 font-grotesk text-tbody">
+          {MENU_ITEMS.map((item) => (
+            <li key={item.name} className="flex items-center px-2 h-[40px]">
+              <a
+                href={item.href}
+                className="text-tbody hover:text-primary transition"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
-        <SwitchThemeBtn toggleDarkMode={toggleDarkMode} />
+        <div className="hidden md:flex justify-end w-full gap-3">
+          <Button>Ver mas acerca de</Button>
+          <SwitchThemeBtn toggleDarkMode={toggleDarkMode} />
+        </div>
       </Layout>
     </nav>
   );

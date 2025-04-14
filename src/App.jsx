@@ -4,6 +4,7 @@ import { Hero2 } from "@/components/pages/landing/Hero2";
 import { Hero } from "@/components/pages/landing/Hero";
 import { About } from "@/components/pages/landing/About";
 import { Gallery } from "@/components/pages/landing/Gallery";
+import { Footer } from "@/components/app/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,9 +15,11 @@ function App() {
       <Hero />
       <About />
       <Gallery />
-      <Hero2 />
+      <Footer />
     </>
   );
 }
 
 export default App;
+
+//<Hero2 />

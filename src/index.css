@@ -11,19 +11,21 @@
   --font-body: "Inter", "system-ui", "sans-serif";
   /* --spacing: 0.25rem; */
 
-  --color-primary: #002bff;
+  --color-primary: #E21AF8; /* #002bff;*/
   --color-secondary: #8b5cf6;
   --color-accent: #10b981;
   --color-bg: #f9fafb;
   --color-text: #1e293b;
   --color-border: #d7d9dd;
+  --color-tbody: #1c1917;
 }
 
 .dark {
-  --color-primary: #1e86ee;
+  --color-primary: #E21AF8 ; /*  #1e86ee; */
   --color-secondary: #a78bfa;
   --color-accent: #34d399;
   --color-bg: #171717;
   --color-text: #f3f4f6;
   --color-border: #444546;
+  --color-tbody: #eeeeee;
 }
