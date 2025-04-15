@@ -6,7 +6,7 @@ export const About = () => {
     "text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-violet-500 to-pink-500";
 
   return (
-    <section className="w-full h-[80vh] bg-bg text-tbody py-[15%] lg:py-0">
+    <section className="w-full min-h-[80vh] bg-bg text-tbody py-[15%] lg:py-[5%]">
       <Layout>
         <div className="flex justify-center items-center h-full">
           <h1 className="hidden text-4xl font-bold ">Sobre Nosotros</h1>
