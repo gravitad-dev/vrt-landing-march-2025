@@ -80,26 +80,28 @@ export function Hero() {
     "https://assets.aceternity.com/world-map.webp",
   ];
 
+  const textStyle =
+    "text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-violet-300 to-pink-500";
+
   return (
-    <div className="relative bg-black mx-auto flex h-[80vh] w-full max-w-7xl flex-col items-center justify-center overflow-hidden font-poppins ">
-      <h2 className="relative text-2xl md:text-5xl lg:text-6xl font-bold z-20 mx-auto max-w-4xl text-center text-balance text-white">
-        VRT - Producción sin limites en <br />
-        <span className="hidden relative z-20 rounded-xl bg-blue-500/40 px-4 py-1 text-white underline decoration-sky-500 decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
-          tiempo real
-        </span>{" "}
-        <ColourfulText text="tiempo real" />
-      </h2>
-      <p className="relative z-20 mx-auto max-w-2xl py-8 px-12 text-center text-sm text-neutral-200 md:text-base">
-        Creación al alcance de la mano, más rápido que nunca
+    <div className="relative bg-black mx-auto flex h-[87vh] w-full flex-col items-center justify-center overflow-hidden font-poppins">
+      <h1 className="relative  text-5xl md:text-5xl lg:text-6xl font-bold z-20 mx-auto max-w-4xl text-center text-balance text-white">
+        Producción <span className={textStyle}>sin limites</span> <br />
+        en tiempo real con <span className={textStyle}>VRT</span>
+      </h1>
+      <p className="relative z-20 mx-auto max-w-2xl py-8 px-12 text-center text-neutral-200 md:text-base">
+        Transforma lo que piensas en contenido profesional de ultra calidad con
+        apenas esfuerzo. Deja a nuestra IA traer lo que imaginas a la realidad.
       </p>
 
-      <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
-        <Button variant="primary">Contactanos</Button>
-        <Button variant="secondary">Ver más</Button>
+      <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-1">
+        <Button variant="primary-t">Empezr Ahora</Button>
       </div>
 
       {/* overlay */}
-      <div className="absolute backdrop-blur-[1px] inset-0 z-10 h-full w-full bg-black/50 dark:bg-black/40" />
+      <div className="absolute  inset-0 z-10 h-full w-full bg-black/50 dark:bg-black/40" />
+      <div className="absolute backdrop-blur-[1px] inset-0 z-10 h-full w-full bg-gradient-to-b from-bg/0 to-bg" />
+
       <ThreeDMarquee
         className="pointer-events-none absolute inset-0 h-full w-full"
         images={images}

@@ -11,7 +11,7 @@
   --font-body: "Inter", "system-ui", "sans-serif";
   /* --spacing: 0.25rem; */
 
-  --color-primary: #E21AF8; /* #002bff;*/
+  --color-primary: #e21af8; /* #002bff;*/
   --color-secondary: #8b5cf6;
   --color-accent: #10b981;
   --color-bg: #f9fafb;
@@ -21,7 +21,7 @@
 }
 
 .dark {
-  --color-primary: #E21AF8 ; /*  #1e86ee; */
+  --color-primary: #e21af8; /*  #1e86ee; */
   --color-secondary: #a78bfa;
   --color-accent: #34d399;
   --color-bg: #171717;

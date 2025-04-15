@@ -10,6 +10,8 @@ export const Button = ({ variant = "default", className, children, props }) => {
       "border border-white/20 bg-white/10 px-6 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-black focus:outline-none",
     warning: "",
     danger: "",
+    "primary-t":
+      "bg-primary/40 border rounded-xl border-primary backdrop-blur-sm text-white px-8 hover:bg-[#222160] hover:dark:bg-white hover:dark:text-black transition",
   };
 
   return (

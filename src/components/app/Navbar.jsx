@@ -31,7 +31,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-[1000] h-[75px] bg-bg  text-tbody border-b border-border">
+    <nav className="sticky top-0 z-[1000] h-[75px] bg-bg  text-tbody">
       <Layout className="flex flex-row justify-between xl:max-w-[100%] px-6 xl:px-6">
         <div className="w-full">
           <Logo />
