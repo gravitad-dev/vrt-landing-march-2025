@@ -1,6 +1,6 @@
 export const Logo = () => {
   return (
-    <div className="flex flex-col items-start justify-center h-full w-min font-poppins select-none cursor-pointer ">
+    <div className="flex flex-col items-start justify-center h-min w-min font-poppins select-none cursor-pointer ">
       <h1 className="text-[20px] font-bold text-primary leading-[24px]">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-violet-500 to-pink-500">
           VRT
